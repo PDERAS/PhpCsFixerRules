@@ -1,0 +1,19 @@
+{
+    "name": "pderas/php-cs-fixer-rules",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reed Jones",
+            "email": "reed.jones@pderas.com"
+        }
+    ],
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pderas\\PhpCsFixerRules\\": "src/"
+        }
+    }
+}
