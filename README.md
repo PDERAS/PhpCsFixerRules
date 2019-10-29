@@ -25,6 +25,7 @@ Step 4. Create a file in the root of the project with the following contents:
 
 <?php
 
+require __DIR__ . '/vendor/pderas/php-cs-fixer-rules/src/PhpCsFixerRules.php';
 return Pderas\PhpCsFixerRules\PhpCsFixerRules::config(__DIR__);
 ```
 
