@@ -1,0 +1,5 @@
+<?php
+
+require __DIR__ . '/src/PhpCsFixerRules.php';
+
+return Pderas\PhpCsFixerRules\PhpCsFixerRules::config(__DIR__);
