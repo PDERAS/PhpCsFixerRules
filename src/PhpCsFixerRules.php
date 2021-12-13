@@ -45,11 +45,11 @@ class PhpCsFixerRules
             ->ignoreDotFiles(true)
             ->ignoreVCS(true);
 
-
-        return \PhpCsFixer\Config::create()
-            ->setRules(array_merge(self::$defaultRules, $customRules))
-            //->setIndent("\t")
+        $config = \PhpCsFixer\Config();
+        $return = $config->setRules(array_merge(self::$defaultRules, $customRules))
             ->setLineEnding("\n")
             ->setFinder($finder);
+        
+        return $return;
     }
 }
